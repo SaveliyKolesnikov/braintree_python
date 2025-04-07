@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.merchant_account.funding_details import FundingDetails
+from app.braintree.merchant_account.funding_details import FundingDetails
 
 class TestFundingDetails(unittest.TestCase):
     def test_repr_has_all_fields(self):

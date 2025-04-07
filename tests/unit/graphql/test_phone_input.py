@@ -1,5 +1,5 @@
 from tests.test_helper import unittest
-from braintree.graphql import PhoneInput
+from app.braintree.graphql import PhoneInput
 
 class TestPhoneInput(unittest.TestCase):
     def test_to_graphql_variables(self):

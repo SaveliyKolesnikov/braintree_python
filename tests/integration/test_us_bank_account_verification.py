@@ -1,7 +1,7 @@
 from tests.test_helper import *
 
-from braintree.us_bank_account_verification import UsBankAccountVerification
-from braintree.us_bank_account_verification_search import UsBankAccountVerificationSearch
+from app.braintree.us_bank_account_verification import UsBankAccountVerification
+from app.braintree.us_bank_account_verification_search import UsBankAccountVerificationSearch
 
 class TestUsBankAccountVerification(unittest.TestCase):
     def test_find_by_id(self):

@@ -1,7 +1,7 @@
 from tests.test_helper import *
 from datetime import date
-from braintree.us_bank_account import UsBankAccount
-from braintree.us_bank_account_verification import UsBankAccountVerification
+from app.braintree.us_bank_account import UsBankAccount
+from app.braintree.us_bank_account_verification import UsBankAccountVerification
 
 class TestUsBankAccount(unittest.TestCase):
     def test_constructor(self):

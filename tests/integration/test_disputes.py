@@ -2,7 +2,7 @@ import re
 import time
 import datetime
 from tests.test_helper import *
-from braintree.test.credit_card_numbers import CreditCardNumbers
+from app.braintree.test.credit_card_numbers import CreditCardNumbers
 
 class TestDisputes(unittest.TestCase):
     def create_evidence_document(self):

@@ -1,6 +1,6 @@
 from tests.test_helper import *
-from braintree.configuration import Configuration
-from braintree.exceptions.test_operation_performed_in_production_error import TestOperationPerformedInProductionError
+from app.braintree.configuration import Configuration
+from app.braintree.exceptions.test_operation_performed_in_production_error import TestOperationPerformedInProductionError
 
 class TestTestingGateway(unittest.TestCase):
     def setUp(self):

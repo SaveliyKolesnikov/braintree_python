@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.meta_checkout_card import MetaCheckoutCard
+from app.braintree.meta_checkout_card import MetaCheckoutCard
 
 class TestMetaCheckoutCard(unittest.TestCase):
     def test_initialization(self):

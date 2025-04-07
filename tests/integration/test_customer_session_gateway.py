@@ -1,5 +1,5 @@
 import unittest
-import braintree
+import app.braintree as braintree
 from braintree import CreateCustomerSessionInput, CustomerSessionInput, PhoneInput, UpdateCustomerSessionInput, CustomerRecommendationsInput, Recommendations
 class CustomerSessionIT(unittest.TestCase):
 

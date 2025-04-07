@@ -1,6 +1,6 @@
 from tests.test_helper import *
 from datetime import datetime
-from braintree.authorization_adjustment import AuthorizationAdjustment
+from app.braintree.authorization_adjustment import AuthorizationAdjustment
 
 class TestAuthorizationAdjustment(unittest.TestCase):
     def test_constructor(self):

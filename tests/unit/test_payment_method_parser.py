@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.payment_method_parser import parse_payment_method
+from app.braintree.payment_method_parser import parse_payment_method
 from unittest.mock import MagicMock
 
 class TestPaymentMethodParser(unittest.TestCase):

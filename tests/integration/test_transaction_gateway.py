@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.configuration import Configuration
+from app.braintree.configuration import Configuration
 
 class TestTransactionGateway(unittest.TestCase):
 

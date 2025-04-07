@@ -1,5 +1,5 @@
-from braintree.exchange_rate_quote_gateway import ExchangeRateQuoteGateway
-from braintree.exchange_rate_quote_request import ExchangeRateQuoteRequest
+from app.braintree.exchange_rate_quote_gateway import ExchangeRateQuoteGateway
+from app.braintree.exchange_rate_quote_request import ExchangeRateQuoteRequest
 from tests.test_helper import *
 from unittest.mock import Mock
 

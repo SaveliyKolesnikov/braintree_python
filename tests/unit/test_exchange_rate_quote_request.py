@@ -1,4 +1,4 @@
-from braintree.exchange_rate_quote_request import ExchangeRateQuoteRequest
+from app.braintree.exchange_rate_quote_request import ExchangeRateQuoteRequest
 from tests.test_helper import *
 
 class TestExchangeRateQuoteRequest(unittest.TestCase):

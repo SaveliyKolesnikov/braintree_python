@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.us_bank_account_verification import UsBankAccountVerification
+from app.braintree.us_bank_account_verification import UsBankAccountVerification
 
 class PaymentMethodWithUsBankAccountTest(unittest.TestCase):
     def test_create_with_nonce(self):

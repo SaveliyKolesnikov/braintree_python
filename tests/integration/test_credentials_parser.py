@@ -1,6 +1,6 @@
 from tests.test_helper import *
-from braintree.test.nonces import Nonces
-from braintree.credentials_parser import CredentialsParser
+from app.braintree.test.nonces import Nonces
+from app.braintree.credentials_parser import CredentialsParser
 
 class TestCredentialsParser(unittest.TestCase):
     def test_parses_client_credentials(self):

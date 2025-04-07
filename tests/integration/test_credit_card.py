@@ -1,7 +1,7 @@
 import datetime
 from tests.test_helper import *
-from braintree.test.credit_card_defaults import CreditCardDefaults
-from braintree.test.credit_card_numbers import CreditCardNumbers
+from app.braintree.test.credit_card_defaults import CreditCardDefaults
+from app.braintree.test.credit_card_numbers import CreditCardNumbers
 
 class TestCreditCard(unittest.TestCase):
     def test_create_with_three_d_secure_nonce(self):

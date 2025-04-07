@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.test.credit_card_numbers import CreditCardNumbers
+from app.braintree.test.credit_card_numbers import CreditCardNumbers
 
 class TestDisputeSearch(unittest.TestCase):
     def create_sample_disputed_transaction(self):

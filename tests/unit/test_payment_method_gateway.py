@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.payment_method_gateway import PaymentMethodGateway
+from app.braintree.payment_method_gateway import PaymentMethodGateway
 from unittest.mock import MagicMock
 
 class TestPaymentMethodGateway(unittest.TestCase):

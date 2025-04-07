@@ -1,5 +1,5 @@
 from tests.test_helper import unittest
-from braintree.graphql import CustomerRecommendationsInput, CustomerSessionInput, PhoneInput, Recommendations
+from app.braintree.graphql import CustomerRecommendationsInput, CustomerSessionInput, PhoneInput, Recommendations
 
 class TestCustomerRecommendationsInput(unittest.TestCase):
     def test_to_graphql_variables_with_all_fields(self):

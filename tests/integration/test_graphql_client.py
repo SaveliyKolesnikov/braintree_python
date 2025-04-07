@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from braintree.configuration import Configuration
-from braintree.environment import Environment
+from app.braintree.configuration import Configuration
+from app.braintree.environment import Environment
 
 class TestGraphQLClient(TestCase):
 

@@ -1,8 +1,8 @@
 from tests.test_helper import *
 
-from braintree.braintree_gateway import BraintreeGateway
-from braintree.configuration import Configuration
-from braintree.environment import Environment
+from app.braintree.braintree_gateway import BraintreeGateway
+from app.braintree.configuration import Configuration
+from app.braintree.environment import Environment
 
 class TestBraintreeGateway(unittest.TestCase):
 

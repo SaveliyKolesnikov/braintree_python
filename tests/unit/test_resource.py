@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.resource import Resource
+from app.braintree.resource import Resource
 
 class TestResource(unittest.TestCase):
     def test_verify_keys_allows_wildcard_keys(self):

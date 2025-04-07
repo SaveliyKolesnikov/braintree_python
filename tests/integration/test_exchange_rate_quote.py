@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.exchange_rate_quote_request import ExchangeRateQuoteRequest
+from app.braintree.exchange_rate_quote_request import ExchangeRateQuoteRequest
 
 class TestExchangeRateQuote(unittest.TestCase):
     @staticmethod

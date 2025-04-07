@@ -1,6 +1,6 @@
 from tests.test_helper import *
 from datetime import date
-from braintree.dispute import Dispute
+from app.braintree.dispute import Dispute
 
 class TestDispute(unittest.TestCase):
     legacy_attributes = {

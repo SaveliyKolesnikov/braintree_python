@@ -1,9 +1,9 @@
 from tests.test_helper import *
 from datetime import date
-from braintree.dispute import Dispute
-from braintree.credit_card import CreditCard
-from braintree.paypal_account import PayPalAccount
-from braintree.venmo_account import VenmoAccount
+from app.braintree.dispute import Dispute
+from app.braintree.credit_card import CreditCard
+from app.braintree.paypal_account import PayPalAccount
+from app.braintree.venmo_account import VenmoAccount
 
 class TestWebhooks(unittest.TestCase):
     def test_granted_payment_method_revoked(self):

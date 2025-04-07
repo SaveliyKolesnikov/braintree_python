@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.visa_checkout_card import VisaCheckoutCard
+from app.braintree.visa_checkout_card import VisaCheckoutCard
 
 class TestVisaCheckoutCard(unittest.TestCase):
     def test_expiration_date(self):

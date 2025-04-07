@@ -1,6 +1,6 @@
 from tests.test_helper import *
 import time
-from braintree.test.nonces import Nonces
+from app.braintree.test.nonces import Nonces
 
 class TestSepaDirectDebitAccount(unittest.TestCase):
     def test_find_returns_sepa_direct_debit_account(self):

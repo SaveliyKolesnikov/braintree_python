@@ -3,36 +3,38 @@
 The Braintree Python library provides integration access to the Braintree Gateway.
 
 ## TLS 1.2 required
-> **The Payment Card Industry (PCI) Council has [mandated](https://blog.pcisecuritystandards.org/migrating-from-ssl-and-early-tls) that early versions of TLS be retired from service.  All organizations that handle credit card information are required to comply with this standard. As part of this obligation, Braintree has updated its services to require TLS 1.2 for all HTTPS connections. Braintrees require HTTP/1.1 for all connections. Please see our [technical documentation](https://github.com/paypal/tls-update) for more information.**
+
+> **The Payment Card Industry (PCI) Council has [mandated](https://blog.pcisecuritystandards.org/migrating-from-ssl-and-early-tls) that early versions of TLS be retired from service. All organizations that handle credit card information are required to comply with this standard. As part of this obligation, Braintree has updated its services to require TLS 1.2 for all HTTPS connections. Braintrees require HTTP/1.1 for all connections. Please see our [technical documentation](https://github.com/paypal/tls-update) for more information.**
 
 ## Dependencies
 
-* [requests](http://docs.python-requests.org/en/latest/)
+- [requests](http://docs.python-requests.org/en/latest/)
 
 The Braintree Python SDK is tested against Python versions 3.5.3 and 3.12.0.
 
 _The Python core development community has released [End-of-Life branches](https://devguide.python.org/devcycle/#end-of-life-branches) for Python versions 2.7 - 3.4, and are no longer receiving [security updates](https://devguide.python.org/#branchstatus). As a result, Braintree no longer supports these versions of Python._
 
 ## Versions
+
 > :warning: **The SSL certificates for Python SDK versions older than 4.31.0 are set to expire by June 31, 2025. If you do not update your SDK to the latest version with the updated certificates by June 31, 2025, 100% of your impacted traffic will fail**
 
 Braintree employs a deprecation policy for our SDKs. For more information on the statuses of an SDK check our [developer docs](https://developer.paypal.com/braintree/docs/reference/general/server-sdk-deprecation-policy).
 
-| Major version number | Status | Released | Deprecated | Unsupported |
-| -------------------- | ------ | -------- | ---------- | ----------- |
-| 4.x.x | Active | March 2020 | TBA | TBA |
-| 3.x.x | Inactive | June 2014 | March 2022 | March 2023 |
+| Major version number | Status   | Released   | Deprecated | Unsupported |
+| -------------------- | -------- | ---------- | ---------- | ----------- |
+| 4.x.x                | Active   | March 2020 | TBA        | TBA         |
+| 3.x.x                | Inactive | June 2014  | March 2022 | March 2023  |
 
 ## Documentation
 
- * [Official documentation](https://developer.paypal.com/braintree/docs/start/hello-server/python)
+- [Official documentation](https://developer.paypal.com/braintree/docs/start/hello-server/python)
 
 Updating from an Inactive, Deprecated, or Unsupported version of this SDK? Check our [Migration Guide](https://developer.paypal.com/braintree/docs/reference/general/server-sdk-migration-guide/python) for tips.
 
 ## Quick Start Example
 
 ```python
-import braintree
+import app.braintree as braintree
 
 gateway = braintree.BraintreeGateway(
     braintree.Configuration(

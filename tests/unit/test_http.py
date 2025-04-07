@@ -1,8 +1,8 @@
 import traceback
 
 from tests.test_helper import *
-from braintree.exceptions.http.timeout_error import *
-from braintree.attribute_getter import AttributeGetter
+from app.braintree.exceptions.http.timeout_error import *
+from app.braintree.attribute_getter import AttributeGetter
 from unittest.mock import patch
 
 class TestHttp(unittest.TestCase):

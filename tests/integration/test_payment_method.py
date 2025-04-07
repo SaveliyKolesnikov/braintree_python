@@ -1,8 +1,8 @@
 import time
 from datetime import datetime
 from tests.test_helper import *
-from braintree.test.credit_card_numbers import CreditCardNumbers
-from braintree.test.nonces import Nonces
+from app.braintree.test.credit_card_numbers import CreditCardNumbers
+from app.braintree.test.nonces import Nonces
 
 class TestPaymentMethod(unittest.TestCase):
     def test_create_with_three_d_secure_nonce(self):

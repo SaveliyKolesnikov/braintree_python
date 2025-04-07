@@ -1,7 +1,7 @@
 from datetime import datetime
 from tests.test_helper import *
 
-from braintree.us_bank_account_verification import UsBankAccountVerification
+from app.braintree.us_bank_account_verification import UsBankAccountVerification
 
 class TestUsBankAccountVerification(unittest.TestCase):
     def test_finding_empty_id_raises_not_found_exception(self):

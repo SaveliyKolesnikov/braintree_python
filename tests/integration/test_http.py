@@ -1,7 +1,7 @@
 from tests.test_helper import *
 from distutils.version import LooseVersion
 import platform
-import braintree
+import app.braintree as braintree
 import requests
 
 class TestHttp(unittest.TestCase):

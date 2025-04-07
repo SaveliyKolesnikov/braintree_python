@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.test.nonces import Nonces
+from app.braintree.test.nonces import Nonces
 from datetime import date
 
 class TestPaymentMethodNonce(unittest.TestCase):

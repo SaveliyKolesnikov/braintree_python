@@ -18,11 +18,11 @@ import unittest
 import warnings
 
 from braintree import *
-from braintree.exceptions import *
-from braintree.test.credit_card_numbers import CreditCardNumbers
-from braintree.test.nonces import Nonces
-from braintree.testing_gateway import *
-from braintree.util import *
+from app.braintree.exceptions import *
+from app.braintree.test.credit_card_numbers import CreditCardNumbers
+from app.braintree.test.nonces import Nonces
+from app.braintree.testing_gateway import *
+from app.braintree.util import *
 
 def reset_braintree_configuration():
     Configuration.configure(

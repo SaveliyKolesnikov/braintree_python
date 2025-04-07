@@ -1,5 +1,5 @@
 from tests.test_helper import *
-import braintree
+import app.braintree as braintree
 import os
 import importlib
 

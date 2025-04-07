@@ -1,10 +1,10 @@
 from tests.test_helper import *
-from braintree.test.credit_card_numbers import CreditCardNumbers
-from braintree.meta_checkout_card import MetaCheckoutCard
-from braintree.meta_checkout_token import MetaCheckoutToken
+from app.braintree.test.credit_card_numbers import CreditCardNumbers
+from app.braintree.meta_checkout_card import MetaCheckoutCard
+from app.braintree.meta_checkout_token import MetaCheckoutToken
 from datetime import datetime
 from datetime import date
-from braintree.authorization_adjustment import AuthorizationAdjustment
+from app.braintree.authorization_adjustment import AuthorizationAdjustment
 from unittest.mock import MagicMock
 
 class TestTransaction(unittest.TestCase):

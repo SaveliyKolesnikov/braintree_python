@@ -1,9 +1,9 @@
 import json
 from tests.test_helper import *
-from braintree.test.credit_card_numbers import CreditCardNumbers
-from braintree.test.nonces import Nonces
-from braintree.dispute import Dispute
-from braintree.payment_instrument_type import PaymentInstrumentType
+from app.braintree.test.credit_card_numbers import CreditCardNumbers
+from app.braintree.test.nonces import Nonces
+from app.braintree.dispute import Dispute
+from app.braintree.payment_instrument_type import PaymentInstrumentType
 from datetime import date
 
 class TestTransaction(unittest.TestCase):

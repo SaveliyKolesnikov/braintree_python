@@ -1,6 +1,6 @@
 from tests.test_helper import *
-from braintree.payment_instrument_type import PaymentInstrumentType
-from braintree.us_bank_account_verification import UsBankAccountVerification
+from app.braintree.payment_instrument_type import PaymentInstrumentType
+from app.braintree.us_bank_account_verification import UsBankAccountVerification
 
 class TestTransactionWithUsBankAccount(unittest.TestCase):
     def test_nonce_transactions(self):

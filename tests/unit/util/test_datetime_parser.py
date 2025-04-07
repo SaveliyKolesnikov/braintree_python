@@ -1,5 +1,5 @@
 import unittest
-from braintree.util.datetime_parser import parse_datetime as parse
+from app.braintree.util.datetime_parser import parse_datetime as parse
 from datetime import datetime
 
 

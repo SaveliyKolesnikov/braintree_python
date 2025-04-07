@@ -2,8 +2,8 @@ from tests.test_helper import *
 import json
 import urllib
 import datetime
-import braintree
-from braintree.util import Http
+import app.braintree as braintree
+from app.braintree.util import Http
 from base64 import b64decode
 
 class TestClientTokenGenerate(unittest.TestCase):

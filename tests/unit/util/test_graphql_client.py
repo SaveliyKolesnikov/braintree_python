@@ -1,5 +1,5 @@
 import unittest
-from braintree.util.graphql_client import GraphQLClient
+from app.braintree.util.graphql_client import GraphQLClient
 
 
 class TestGraphQLClient(unittest.TestCase):

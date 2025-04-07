@@ -1,5 +1,5 @@
 from tests.test_helper import *
-import braintree
+import app.braintree as braintree
 
 class TestExports(unittest.TestCase):
     def test_exports_properties(self):

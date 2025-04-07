@@ -1,6 +1,6 @@
-from braintree.braintree_gateway import BraintreeGateway
-from braintree.customer_session_gateway import CustomerSessionGateway
-from braintree.graphql import (
+from app.braintree.braintree_gateway import BraintreeGateway
+from app.braintree.customer_session_gateway import CustomerSessionGateway
+from app.braintree.graphql import (
     CreateCustomerSessionInput,
     CustomerSessionInput,
     UpdateCustomerSessionInput,
@@ -9,8 +9,8 @@ from braintree.graphql import (
     CustomerRecommendationsPayload,
     PaymentOptions,
 )
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
+from app.braintree.error_result import ErrorResult
+from app.braintree.successful_result import SuccessfulResult
 from unittest.mock import patch, MagicMock
 import unittest
 from tests.test_helper import *

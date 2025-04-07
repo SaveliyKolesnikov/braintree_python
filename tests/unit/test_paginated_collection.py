@@ -1,7 +1,7 @@
 from tests.test_helper import *
 
-from braintree.paginated_collection import PaginatedCollection
-from braintree.paginated_result import PaginatedResult
+from app.braintree.paginated_collection import PaginatedCollection
+from app.braintree.paginated_result import PaginatedResult
 
 class TestPaginatedCollection(unittest.TestCase):
     def test_fetches_once_when_page_and_total_sizes_match(self):

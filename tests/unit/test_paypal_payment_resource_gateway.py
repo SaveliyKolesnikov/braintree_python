@@ -1,10 +1,10 @@
 import unittest
-from braintree.paypal_payment_resource_gateway import PayPalPaymentResourceGateway
-from braintree.paypal_payment_resource import PayPalPaymentResource
-from braintree.resource import Resource
+from app.braintree.paypal_payment_resource_gateway import PayPalPaymentResourceGateway
+from app.braintree.paypal_payment_resource import PayPalPaymentResource
+from app.braintree.resource import Resource
 from unittest.mock import patch, MagicMock
 from decimal import Decimal
-from braintree.util.xml_util import XmlUtil
+from app.braintree.util.xml_util import XmlUtil
 class TestPayPalPaymentResourceGateway(unittest.TestCase):
     def setUp(self):
         self.gateway = MagicMock()

@@ -1,5 +1,5 @@
 from tests.test_helper import *
-from braintree.disbursement_detail import DisbursementDetail
+from app.braintree.disbursement_detail import DisbursementDetail
 
 class TestDisbursementDetail(unittest.TestCase):
     def test_is_valid_true(self):

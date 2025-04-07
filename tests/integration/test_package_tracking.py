@@ -1,6 +1,6 @@
 import json
 from tests.test_helper import *
-from braintree.transaction import Transaction
+from app.braintree.transaction import Transaction
 
 class PackageTracking(unittest.TestCase):
     def setUp(self):

@@ -1,6 +1,6 @@
 # -*- coding: latin-1 -*-
 from tests.test_helper import *
-from braintree.test.nonces import Nonces
+from app.braintree.test.nonces import Nonces
 
 class TestCustomer(unittest.TestCase):
     @unittest.skip("skip until CI is more stable")
