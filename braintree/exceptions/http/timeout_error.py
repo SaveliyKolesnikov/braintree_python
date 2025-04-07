@@ -1,4 +1,4 @@
-from braintree.exceptions.unexpected_error import UnexpectedError
+from app.library.braintree_python.braintree.exceptions.unexpected_error import UnexpectedError
 
 class TimeoutError(UnexpectedError):
     pass

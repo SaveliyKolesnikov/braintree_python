@@ -1,7 +1,7 @@
-import braintree
-from braintree.address import Address
-from braintree.resource import Resource
-from braintree.credit_card_verification import CreditCardVerification
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.address import Address
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.credit_card_verification import CreditCardVerification
 
 class VisaCheckoutCard(Resource):
     """

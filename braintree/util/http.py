@@ -2,25 +2,25 @@ import sys
 import requests
 from base64 import encodebytes
 import json
-import braintree
-from braintree import version
-from braintree.environment import Environment
-from braintree.util.xml_util import XmlUtil
-from braintree.exceptions.authentication_error import AuthenticationError
-from braintree.exceptions.authorization_error import AuthorizationError
-from braintree.exceptions.gateway_timeout_error import GatewayTimeoutError
-from braintree.exceptions.http.connection_error import ConnectionError
-from braintree.exceptions.http.invalid_response_error import InvalidResponseError
-from braintree.exceptions.http.timeout_error import ConnectTimeoutError
-from braintree.exceptions.http.timeout_error import ReadTimeoutError
-from braintree.exceptions.http.timeout_error import TimeoutError
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.exceptions.request_timeout_error import RequestTimeoutError
-from braintree.exceptions.server_error import ServerError
-from braintree.exceptions.service_unavailable_error import ServiceUnavailableError
-from braintree.exceptions.too_many_requests_error import TooManyRequestsError
-from braintree.exceptions.unexpected_error import UnexpectedError
-from braintree.exceptions.upgrade_required_error import UpgradeRequiredError
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree import version
+from app.library.braintree_python.braintree.environment import Environment
+from app.library.braintree_python.braintree.util.xml_util import XmlUtil
+from app.library.braintree_python.braintree.exceptions.authentication_error import AuthenticationError
+from app.library.braintree_python.braintree.exceptions.authorization_error import AuthorizationError
+from app.library.braintree_python.braintree.exceptions.gateway_timeout_error import GatewayTimeoutError
+from app.library.braintree_python.braintree.exceptions.http.connection_error import ConnectionError
+from app.library.braintree_python.braintree.exceptions.http.invalid_response_error import InvalidResponseError
+from app.library.braintree_python.braintree.exceptions.http.timeout_error import ConnectTimeoutError
+from app.library.braintree_python.braintree.exceptions.http.timeout_error import ReadTimeoutError
+from app.library.braintree_python.braintree.exceptions.http.timeout_error import TimeoutError
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.exceptions.request_timeout_error import RequestTimeoutError
+from app.library.braintree_python.braintree.exceptions.server_error import ServerError
+from app.library.braintree_python.braintree.exceptions.service_unavailable_error import ServiceUnavailableError
+from app.library.braintree_python.braintree.exceptions.too_many_requests_error import TooManyRequestsError
+from app.library.braintree_python.braintree.exceptions.unexpected_error import UnexpectedError
+from app.library.braintree_python.braintree.exceptions.upgrade_required_error import UpgradeRequiredError
 
 class Http(object):
     class ContentType(object):

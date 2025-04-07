@@ -1,6 +1,6 @@
-import braintree
+import app.library.braintree_python.braintree as braintree
 
-from braintree.resource import Resource
+from app.library.braintree_python.braintree.resource import Resource
 
 class BlikAlias(Resource):
     """

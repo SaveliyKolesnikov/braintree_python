@@ -1,6 +1,6 @@
-from braintree.util import Constants
-from braintree import Subscription
-from braintree.search import Search
+from app.library.braintree_python.braintree.util import Constants
+from app.library.braintree_python.braintree import Subscription
+from app.library.braintree_python.braintree.search import Search
 
 class SubscriptionSearch:
     billing_cycles_remaining = Search.RangeNodeBuilder("billing_cycles_remaining")

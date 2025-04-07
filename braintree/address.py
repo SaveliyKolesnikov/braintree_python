@@ -1,7 +1,7 @@
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.configuration import Configuration
 
 class Address(Resource):
     """

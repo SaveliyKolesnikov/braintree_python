@@ -1,19 +1,19 @@
-import braintree
-from braintree.apple_pay_card import ApplePayCard
-from braintree.credit_card import CreditCard
-from braintree.payment_method import PaymentMethod
-from braintree.paypal_account import PayPalAccount
-from braintree.europe_bank_account import EuropeBankAccount
-from braintree.android_pay_card import AndroidPayCard
-from braintree.amex_express_checkout_card import AmexExpressCheckoutCard
-from braintree.venmo_account import VenmoAccount
-from braintree.us_bank_account import UsBankAccount
-from braintree.visa_checkout_card import VisaCheckoutCard
-from braintree.masterpass_card import MasterpassCard
-from braintree.sepa_direct_debit_account import SepaDirectDebitAccount
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.apple_pay_card import ApplePayCard
+from app.library.braintree_python.braintree.credit_card import CreditCard
+from app.library.braintree_python.braintree.payment_method import PaymentMethod
+from app.library.braintree_python.braintree.paypal_account import PayPalAccount
+from app.library.braintree_python.braintree.europe_bank_account import EuropeBankAccount
+from app.library.braintree_python.braintree.android_pay_card import AndroidPayCard
+from app.library.braintree_python.braintree.amex_express_checkout_card import AmexExpressCheckoutCard
+from app.library.braintree_python.braintree.venmo_account import VenmoAccount
+from app.library.braintree_python.braintree.us_bank_account import UsBankAccount
+from app.library.braintree_python.braintree.visa_checkout_card import VisaCheckoutCard
+from app.library.braintree_python.braintree.masterpass_card import MasterpassCard
+from app.library.braintree_python.braintree.sepa_direct_debit_account import SepaDirectDebitAccount
 # NEXT_MAJOR_VERSION remove SamsungPayCard
-from braintree.samsung_pay_card import SamsungPayCard
-from braintree.unknown_payment_method import UnknownPaymentMethod
+from app.library.braintree_python.braintree.samsung_pay_card import SamsungPayCard
+from app.library.braintree_python.braintree.unknown_payment_method import UnknownPaymentMethod
 
 def parse_payment_method(gateway, attributes):
     if "paypal_account" in attributes:

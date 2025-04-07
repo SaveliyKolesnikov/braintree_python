@@ -1,12 +1,12 @@
-from braintree.util.http import Http
-import braintree
-from braintree.add_on import AddOn
-from braintree.configuration import Configuration
-from braintree.discount import Discount
-from braintree.resource_collection import ResourceCollection
-from braintree.resource import Resource
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.util.http import Http
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.add_on import AddOn
+from app.library.braintree_python.braintree.configuration import Configuration
+from app.library.braintree_python.braintree.discount import Discount
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.error_result import ErrorResult
 
 class Plan(Resource):
 

@@ -1,10 +1,10 @@
 from typing import Dict
-import braintree
-from braintree.error_result import ErrorResult
-from braintree.exceptions.unexpected_error import UnexpectedError
-from braintree.successful_result import SuccessfulResult
-from braintree.util.graphql_client import GraphQLClient
-from braintree.graphql import (
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.exceptions.unexpected_error import UnexpectedError
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.util.graphql_client import GraphQLClient
+from app.library.braintree_python.braintree.graphql import (
     CreateCustomerSessionInput,
     UpdateCustomerSessionInput,
     CustomerRecommendations,

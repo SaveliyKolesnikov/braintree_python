@@ -1,4 +1,4 @@
-from braintree.graphql.unions.customer_recommendations import CustomerRecommendations
+from app.library.braintree_python.braintree.graphql.unions.customer_recommendations import CustomerRecommendations
 
 
 class CustomerRecommendationsPayload:

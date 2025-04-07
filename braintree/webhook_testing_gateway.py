@@ -1,5 +1,5 @@
-from braintree.util.crypto import Crypto
-from braintree.webhook_notification import WebhookNotification
+from app.library.braintree_python.braintree.util.crypto import Crypto
+from app.library.braintree_python.braintree.webhook_notification import WebhookNotification
 import sys
 from base64 import encodebytes
 from datetime import datetime

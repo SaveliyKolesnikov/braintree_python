@@ -1,9 +1,9 @@
-import braintree
+import app.library.braintree_python.braintree as braintree
 import warnings
-from braintree.resource import Resource
-from braintree.address import Address
-from braintree.configuration import Configuration
-from braintree.credit_card_verification import CreditCardVerification
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.address import Address
+from app.library.braintree_python.braintree.configuration import Configuration
+from app.library.braintree_python.braintree.credit_card_verification import CreditCardVerification
 from enum import Enum
 
 class CreditCard(Resource):

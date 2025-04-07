@@ -1,3 +1,3 @@
-from braintree.dispute_details.evidence import DisputeEvidence
-from braintree.dispute_details.paypal_message import DisputePayPalMessage
-from braintree.dispute_details.status_history import DisputeStatusHistory
+from app.library.braintree_python.braintree.dispute_details.evidence import DisputeEvidence
+from app.library.braintree_python.braintree.dispute_details.paypal_message import DisputePayPalMessage
+from app.library.braintree_python.braintree.dispute_details.status_history import DisputeStatusHistory

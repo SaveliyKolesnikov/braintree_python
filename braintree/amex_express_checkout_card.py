@@ -1,5 +1,5 @@
-import braintree
-from braintree.resource import Resource
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.resource import Resource
 from warnings import warn
 
 class AmexExpressCheckoutCard(Resource):

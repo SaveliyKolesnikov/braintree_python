@@ -1,10 +1,10 @@
-from braintree.resource import Resource
-from braintree.paypal_payment_resource import PayPalPaymentResource
-from braintree.payment_method_nonce import PaymentMethodNonce
-from braintree.util.xml_util import XmlUtil
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
-from braintree.exceptions.unexpected_error import UnexpectedError
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.paypal_payment_resource import PayPalPaymentResource
+from app.library.braintree_python.braintree.payment_method_nonce import PaymentMethodNonce
+from app.library.braintree_python.braintree.util.xml_util import XmlUtil
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.exceptions.unexpected_error import UnexpectedError
 
 class PayPalPaymentResourceGateway(object):
     def __init__(self, gateway):

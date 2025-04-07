@@ -1,4 +1,4 @@
-import braintree
+import app.library.braintree_python.braintree as braintree
 
 class PaginatedCollection(object):
     """

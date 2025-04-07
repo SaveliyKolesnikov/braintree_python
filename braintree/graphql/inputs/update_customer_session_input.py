@@ -1,5 +1,5 @@
 from typing import Dict
-from braintree.graphql.inputs.customer_session_input import CustomerSessionInput
+from app.library.braintree_python.braintree.graphql.inputs.customer_session_input import CustomerSessionInput
 
 
 class UpdateCustomerSessionInput:

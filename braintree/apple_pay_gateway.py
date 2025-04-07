@@ -1,8 +1,8 @@
 from html import escape
-from braintree.apple_pay_options import ApplePayOptions
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
-from braintree.exceptions.unexpected_error import UnexpectedError
+from app.library.braintree_python.braintree.apple_pay_options import ApplePayOptions
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.exceptions.unexpected_error import UnexpectedError
 
 class ApplePayGateway(object):
     def __init__(self, gateway):

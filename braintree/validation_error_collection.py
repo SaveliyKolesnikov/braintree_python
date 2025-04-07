@@ -1,4 +1,4 @@
-from braintree.validation_error import ValidationError
+from app.library.braintree_python.braintree.validation_error import ValidationError
 
 
 class ValidationErrorCollection(object):

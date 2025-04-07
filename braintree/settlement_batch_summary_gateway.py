@@ -1,8 +1,8 @@
-import braintree
-from braintree.resource import Resource
-from braintree.settlement_batch_summary import SettlementBatchSummary
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.settlement_batch_summary import SettlementBatchSummary
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.error_result import ErrorResult
 
 class SettlementBatchSummaryGateway(object):
     def __init__(self, gateway):

@@ -1,18 +1,18 @@
 from decimal import Decimal
-from braintree.util.http import Http
-import braintree
+from app.library.braintree_python.braintree.util.http import Http
+import app.library.braintree_python.braintree as braintree
 import warnings
-from braintree.add_on import AddOn
-from braintree.descriptor import Descriptor
-from braintree.discount import Discount
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource_collection import ResourceCollection
-from braintree.subscription_status_event import SubscriptionStatusEvent
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
-from braintree.transaction import Transaction
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from app.library.braintree_python.braintree.add_on import AddOn
+from app.library.braintree_python.braintree.descriptor import Descriptor
+from app.library.braintree_python.braintree.discount import Discount
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.subscription_status_event import SubscriptionStatusEvent
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.transaction import Transaction
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.configuration import Configuration
 
 
 class Subscription(Resource):

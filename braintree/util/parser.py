@@ -1,6 +1,6 @@
 from xml.dom import minidom
 from datetime import datetime
-from braintree.util.datetime_parser import parse_datetime
+from app.library.braintree_python.braintree.util.datetime_parser import parse_datetime
 import re
 import sys
 

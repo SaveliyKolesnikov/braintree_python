@@ -1,4 +1,4 @@
-from braintree.resource import Resource
+from app.library.braintree_python.braintree.resource import Resource
 
 class LocalPaymentExpired(Resource):
     """

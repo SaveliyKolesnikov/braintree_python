@@ -1,8 +1,8 @@
-import braintree
-from braintree.credentials_parser import CredentialsParser
-from braintree.environment import Environment
-from braintree.exceptions.configuration_error import ConfigurationError
-from braintree.util.graphql_client import GraphQLClient
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.credentials_parser import CredentialsParser
+from app.library.braintree_python.braintree.environment import Environment
+from app.library.braintree_python.braintree.exceptions.configuration_error import ConfigurationError
+from app.library.braintree_python.braintree.util.graphql_client import GraphQLClient
 
 
 class Configuration(object):

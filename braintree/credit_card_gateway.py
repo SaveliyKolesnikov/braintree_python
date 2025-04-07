@@ -1,12 +1,12 @@
-import braintree
+import app.library.braintree_python.braintree as braintree
 import warnings
-from braintree.credit_card import CreditCard
-from braintree.error_result import ErrorResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.ids_search import IdsSearch
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.credit_card import CreditCard
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.ids_search import IdsSearch
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
 
 
 class CreditCardGateway(object):

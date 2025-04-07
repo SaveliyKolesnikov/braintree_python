@@ -1,6 +1,6 @@
 from typing import Dict
 
-from braintree.graphql.inputs.phone_input import PhoneInput
+from app.library.braintree_python.braintree.graphql.inputs.phone_input import PhoneInput
 
 
 class CustomerSessionInput:

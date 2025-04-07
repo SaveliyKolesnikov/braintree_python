@@ -1,6 +1,6 @@
-import braintree
-from braintree.errors import Errors
-from braintree.credit_card_verification import CreditCardVerification
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.errors import Errors
+from app.library.braintree_python.braintree.credit_card_verification import CreditCardVerification
 
 class ErrorResult(object):
     """

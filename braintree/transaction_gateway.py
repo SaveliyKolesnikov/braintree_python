@@ -1,12 +1,12 @@
-import braintree
+import app.library.braintree_python.braintree as braintree
 import warnings
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
-from braintree.transaction import Transaction
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.exceptions.request_timeout_error import RequestTimeoutError
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.transaction import Transaction
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.exceptions.request_timeout_error import RequestTimeoutError
 
 
 class TransactionGateway(object):

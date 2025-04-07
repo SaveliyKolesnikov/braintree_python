@@ -1,9 +1,9 @@
-from braintree.us_bank_account_verification import UsBankAccountVerification
-from braintree.us_bank_account_verification_search import UsBankAccountVerificationSearch
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
-from braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.us_bank_account_verification import UsBankAccountVerification
+from app.library.braintree_python.braintree.us_bank_account_verification_search import UsBankAccountVerificationSearch
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
 
 class UsBankAccountVerificationGateway(object):
     def __init__(self, gateway):

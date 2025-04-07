@@ -1,8 +1,8 @@
-import braintree
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
-from braintree.transaction import Transaction
-from braintree.exceptions.test_operation_performed_in_production_error import TestOperationPerformedInProductionError
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.transaction import Transaction
+from app.library.braintree_python.braintree.exceptions.test_operation_performed_in_production_error import TestOperationPerformedInProductionError
 
 class TestingGateway(object):
     def __init__(self, gateway):

@@ -1,5 +1,5 @@
-from braintree.modification import Modification
-from braintree.configuration import Configuration
+from app.library.braintree_python.braintree.modification import Modification
+from app.library.braintree_python.braintree.configuration import Configuration
 
 
 class Discount(Modification):

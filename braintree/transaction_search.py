@@ -1,7 +1,7 @@
-from braintree.credit_card import CreditCard
-from braintree.search import Search
-from braintree.transaction import Transaction
-from braintree.util import Constants
+from app.library.braintree_python.braintree.credit_card import CreditCard
+from app.library.braintree_python.braintree.search import Search
+from app.library.braintree_python.braintree.transaction import Transaction
+from app.library.braintree_python.braintree.util import Constants
 
 class TransactionSearch:
     billing_first_name           = Search.TextNodeBuilder("billing_first_name")

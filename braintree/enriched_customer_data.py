@@ -1,5 +1,5 @@
-from braintree.resource import Resource
-from braintree.venmo_profile_data import VenmoProfileData
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.venmo_profile_data import VenmoProfileData
 
 class EnrichedCustomerData(Resource):
     """

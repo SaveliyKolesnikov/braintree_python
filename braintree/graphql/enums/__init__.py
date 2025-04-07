@@ -1,2 +1,2 @@
-from braintree.graphql.enums.recommended_payment_option import RecommendedPaymentOption
-from braintree.graphql.enums.recommendations import Recommendations
+from app.library.braintree_python.braintree.graphql.enums.recommended_payment_option import RecommendedPaymentOption
+from app.library.braintree_python.braintree.graphql.enums.recommendations import Recommendations

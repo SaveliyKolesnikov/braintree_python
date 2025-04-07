@@ -1,10 +1,10 @@
-from braintree.credit_card_verification import CreditCardVerification
-from braintree.credit_card_verification_search import CreditCardVerificationSearch
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.ids_search import IdsSearch
-from braintree.resource_collection import ResourceCollection
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.credit_card_verification import CreditCardVerification
+from app.library.braintree_python.braintree.credit_card_verification_search import CreditCardVerificationSearch
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.ids_search import IdsSearch
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
 
 
 class CreditCardVerificationGateway(object):

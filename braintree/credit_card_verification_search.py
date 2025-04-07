@@ -1,7 +1,7 @@
-from braintree.credit_card import CreditCard
-from braintree.credit_card_verification import CreditCardVerification
-from braintree.search import Search
-from braintree.util import Constants
+from app.library.braintree_python.braintree.credit_card import CreditCard
+from app.library.braintree_python.braintree.credit_card_verification import CreditCardVerification
+from app.library.braintree_python.braintree.search import Search
+from app.library.braintree_python.braintree.util import Constants
 
 class CreditCardVerificationSearch:
     credit_card_cardholder_name  = Search.TextNodeBuilder("credit_card_cardholder_name")

@@ -1,7 +1,7 @@
-from braintree.us_bank_account import UsBankAccount
-from braintree.us_bank_account_verification import UsBankAccountVerification
-from braintree.search import Search
-from braintree.util import Constants
+from app.library.braintree_python.braintree.us_bank_account import UsBankAccount
+from app.library.braintree_python.braintree.us_bank_account_verification import UsBankAccountVerification
+from app.library.braintree_python.braintree.search import Search
+from app.library.braintree_python.braintree.util import Constants
 
 class UsBankAccountVerificationSearch:
     # Text fields

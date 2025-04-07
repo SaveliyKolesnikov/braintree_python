@@ -1,9 +1,9 @@
-import braintree
+import app.library.braintree_python.braintree as braintree
 import mimetypes
-from braintree.document_upload import DocumentUpload
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.document_upload import DocumentUpload
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
 
 
 class DocumentUploadGateway(object):

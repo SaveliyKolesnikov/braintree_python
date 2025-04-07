@@ -1,5 +1,5 @@
-import braintree
-from braintree.configuration import Configuration
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.configuration import Configuration
 
 class WebhookTesting(object):
     @staticmethod

@@ -1,6 +1,6 @@
-from braintree.configuration import Configuration
-from braintree.resource import Resource
-from braintree.merchant_account import BusinessDetails, FundingDetails, IndividualDetails
+from app.library.braintree_python.braintree.configuration import Configuration
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.merchant_account import BusinessDetails, FundingDetails, IndividualDetails
 
 
 class MerchantAccount(Resource):

@@ -1,4 +1,4 @@
-from braintree.attribute_getter import AttributeGetter
+from app.library.braintree_python.braintree.attribute_getter import AttributeGetter
 
 class DisputeEvidence(AttributeGetter):
     def __init__(self, attributes):

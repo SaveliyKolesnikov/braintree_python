@@ -1,7 +1,7 @@
-import braintree
-from braintree.resource import Resource
-from braintree.client_token import ClientToken
-from braintree import exceptions
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.client_token import ClientToken
+from app.library.braintree_python.braintree import exceptions
 
 
 class ClientTokenGateway(object):

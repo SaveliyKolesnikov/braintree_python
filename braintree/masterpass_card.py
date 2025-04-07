@@ -1,6 +1,6 @@
-import braintree
-from braintree.address import Address
-from braintree.resource import Resource
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.address import Address
+from app.library.braintree_python.braintree.resource import Resource
 from warnings import warn
 
 class MasterpassCard(Resource):

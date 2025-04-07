@@ -1,6 +1,6 @@
-import braintree
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.configuration import Configuration
 
 
 class PayPalAccount(Resource):

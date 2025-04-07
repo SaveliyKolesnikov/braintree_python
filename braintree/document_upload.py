@@ -1,7 +1,7 @@
 import mimetypes
-from braintree.successful_result import SuccessfulResult
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.configuration import Configuration
 
 
 class DocumentUpload(Resource):

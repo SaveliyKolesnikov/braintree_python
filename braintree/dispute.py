@@ -1,9 +1,9 @@
 import warnings
 from decimal import Decimal
-from braintree.attribute_getter import AttributeGetter
-from braintree.transaction_details import TransactionDetails
-from braintree.dispute_details import DisputeEvidence, DisputeStatusHistory, DisputePayPalMessage
-from braintree.configuration import Configuration
+from app.library.braintree_python.braintree.attribute_getter import AttributeGetter
+from app.library.braintree_python.braintree.transaction_details import TransactionDetails
+from app.library.braintree_python.braintree.dispute_details import DisputeEvidence, DisputeStatusHistory, DisputePayPalMessage
+from app.library.braintree_python.braintree.configuration import Configuration
 
 class Dispute(AttributeGetter):
     # NEXT_MAJOR_VERSION this can be an enum! they were added as of python 3.4 and we support 3.5+

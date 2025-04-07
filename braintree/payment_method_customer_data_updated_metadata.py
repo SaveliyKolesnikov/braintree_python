@@ -1,6 +1,6 @@
-from braintree.resource import Resource
-from braintree.payment_method_parser import parse_payment_method
-from braintree.enriched_customer_data import EnrichedCustomerData
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.payment_method_parser import parse_payment_method
+from app.library.braintree_python.braintree.enriched_customer_data import EnrichedCustomerData
 
 class PaymentMethodCustomerDataUpdatedMetadata(Resource):
     """

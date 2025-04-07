@@ -1,14 +1,14 @@
-import braintree
+import app.library.braintree_python.braintree as braintree
 import re
 import warnings
-from braintree.dispute import Dispute
-from braintree.dispute_details import DisputeEvidence
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.paginated_result import PaginatedResult
-from braintree.paginated_collection import PaginatedCollection
-from braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.dispute import Dispute
+from app.library.braintree_python.braintree.dispute_details import DisputeEvidence
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.paginated_result import PaginatedResult
+from app.library.braintree_python.braintree.paginated_collection import PaginatedCollection
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
 
 class DisputeGateway(object):
     def __init__(self, gateway):

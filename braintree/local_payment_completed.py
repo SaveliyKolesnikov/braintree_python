@@ -1,6 +1,6 @@
-from braintree.blik_alias import BlikAlias
-from braintree.resource import Resource
-from braintree.transaction import Transaction
+from app.library.braintree_python.braintree.blik_alias import BlikAlias
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.transaction import Transaction
 
 class LocalPaymentCompleted(Resource):
     def __init__(self, gateway, attributes):

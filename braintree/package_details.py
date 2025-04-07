@@ -1,4 +1,4 @@
-from braintree.attribute_getter import AttributeGetter
+from app.library.braintree_python.braintree.attribute_getter import AttributeGetter
 from warnings import warn
 
 class PackageDetails(AttributeGetter):

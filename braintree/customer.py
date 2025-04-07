@@ -1,26 +1,26 @@
 import warnings
-from braintree.util.http import Http
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.apple_pay_card import ApplePayCard
-from braintree.android_pay_card import AndroidPayCard
-from braintree.amex_express_checkout_card import AmexExpressCheckoutCard
-from braintree.credit_card import CreditCard
-from braintree.paypal_account import PayPalAccount
-from braintree.sepa_direct_debit_account import SepaDirectDebitAccount
-from braintree.europe_bank_account import EuropeBankAccount
-from braintree.us_bank_account import UsBankAccount
-from braintree.venmo_account import VenmoAccount
-from braintree.visa_checkout_card import VisaCheckoutCard
-from braintree.masterpass_card import MasterpassCard
-from braintree.address import Address
-from braintree.configuration import Configuration
-from braintree.ids_search import IdsSearch
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.util.http import Http
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.apple_pay_card import ApplePayCard
+from app.library.braintree_python.braintree.android_pay_card import AndroidPayCard
+from app.library.braintree_python.braintree.amex_express_checkout_card import AmexExpressCheckoutCard
+from app.library.braintree_python.braintree.credit_card import CreditCard
+from app.library.braintree_python.braintree.paypal_account import PayPalAccount
+from app.library.braintree_python.braintree.sepa_direct_debit_account import SepaDirectDebitAccount
+from app.library.braintree_python.braintree.europe_bank_account import EuropeBankAccount
+from app.library.braintree_python.braintree.us_bank_account import UsBankAccount
+from app.library.braintree_python.braintree.venmo_account import VenmoAccount
+from app.library.braintree_python.braintree.visa_checkout_card import VisaCheckoutCard
+from app.library.braintree_python.braintree.masterpass_card import MasterpassCard
+from app.library.braintree_python.braintree.address import Address
+from app.library.braintree_python.braintree.configuration import Configuration
+from app.library.braintree_python.braintree.ids_search import IdsSearch
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
 # NEXT_MAJOR_VERSION remove SamsungPayCard
-from braintree.samsung_pay_card import SamsungPayCard
+from app.library.braintree_python.braintree.samsung_pay_card import SamsungPayCard
 
 
 class Customer(Resource):

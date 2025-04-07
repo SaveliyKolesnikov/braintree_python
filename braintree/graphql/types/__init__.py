@@ -1,2 +1,2 @@
-from braintree.graphql.types.customer_recommendations_payload import CustomerRecommendationsPayload
-from braintree.graphql.types.payment_options import PaymentOptions
+from app.library.braintree_python.braintree.graphql.types.customer_recommendations_payload import CustomerRecommendationsPayload
+from app.library.braintree_python.braintree.graphql.types.payment_options import PaymentOptions

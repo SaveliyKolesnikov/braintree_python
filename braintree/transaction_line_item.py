@@ -1,9 +1,9 @@
-import braintree
+import app.library.braintree_python.braintree as braintree
 import warnings
 
-from braintree.attribute_getter import AttributeGetter
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from app.library.braintree_python.braintree.attribute_getter import AttributeGetter
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.configuration import Configuration
 
 class TransactionLineItem(AttributeGetter):
     pass

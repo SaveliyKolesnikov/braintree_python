@@ -1,9 +1,9 @@
-import braintree
-from braintree.paypal_account import PayPalAccount
-from braintree.error_result import ErrorResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource import Resource
-from braintree.successful_result import SuccessfulResult
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.paypal_account import PayPalAccount
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
 
 
 class PayPalAccountGateway(object):

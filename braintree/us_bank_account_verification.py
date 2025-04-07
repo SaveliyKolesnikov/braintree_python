@@ -1,5 +1,5 @@
-from braintree.attribute_getter import AttributeGetter
-from braintree.configuration import Configuration
+from app.library.braintree_python.braintree.attribute_getter import AttributeGetter
+from app.library.braintree_python.braintree.configuration import Configuration
 import braintree.us_bank_account
 
 class UsBankAccountVerification(AttributeGetter):

@@ -1,11 +1,11 @@
-from braintree.error_result import ErrorResult
-from braintree.merchant_account import MerchantAccount
-from braintree.paginated_collection import PaginatedCollection
-from braintree.paginated_result import PaginatedResult
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
-from braintree.exceptions.not_found_error import NotFoundError
+from app.library.braintree_python.braintree.error_result import ErrorResult
+from app.library.braintree_python.braintree.merchant_account import MerchantAccount
+from app.library.braintree_python.braintree.paginated_collection import PaginatedCollection
+from app.library.braintree_python.braintree.paginated_result import PaginatedResult
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.resource_collection import ResourceCollection
+from app.library.braintree_python.braintree.successful_result import SuccessfulResult
+from app.library.braintree_python.braintree.exceptions.not_found_error import NotFoundError
 
 
 class MerchantAccountGateway(object):

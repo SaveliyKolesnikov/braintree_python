@@ -1,10 +1,10 @@
 import datetime
 import json
 import urllib
-from braintree.configuration import Configuration
-from braintree.signature_service import SignatureService
-from braintree.util.crypto import Crypto
-from braintree import exceptions
+from app.library.braintree_python.braintree.configuration import Configuration
+from app.library.braintree_python.braintree.signature_service import SignatureService
+from app.library.braintree_python.braintree.util.crypto import Crypto
+from app.library.braintree_python.braintree import exceptions
 
 
 class ClientToken(object):

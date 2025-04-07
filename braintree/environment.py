@@ -1,6 +1,6 @@
 import os
 import inspect
-from braintree.exceptions.configuration_error import ConfigurationError
+from app.library.braintree_python.braintree.exceptions.configuration_error import ConfigurationError
 
 class Environment(object):
     """

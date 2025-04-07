@@ -1,8 +1,8 @@
-import braintree
-from braintree.resource import Resource
-from braintree.configuration import Configuration
-from braintree.ach_mandate import AchMandate
-from braintree.us_bank_account_verification import UsBankAccountVerification
+import app.library.braintree_python.braintree as braintree
+from app.library.braintree_python.braintree.resource import Resource
+from app.library.braintree_python.braintree.configuration import Configuration
+from app.library.braintree_python.braintree.ach_mandate import AchMandate
+from app.library.braintree_python.braintree.us_bank_account_verification import UsBankAccountVerification
 
 class UsBankAccount(Resource):
 

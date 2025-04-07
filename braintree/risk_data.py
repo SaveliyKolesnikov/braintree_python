@@ -1,5 +1,5 @@
-from braintree.attribute_getter import AttributeGetter
-from braintree.liability_shift import LiabilityShift
+from app.library.braintree_python.braintree.attribute_getter import AttributeGetter
+from app.library.braintree_python.braintree.liability_shift import LiabilityShift
 
 class RiskData(AttributeGetter):
     def __init__(self, attributes):

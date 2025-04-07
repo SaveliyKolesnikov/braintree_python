@@ -2,11 +2,11 @@ import re
 import sys
 from base64 import decodebytes
 import sys
-from braintree.exceptions.invalid_signature_error import InvalidSignatureError
-from braintree.exceptions.invalid_challenge_error import InvalidChallengeError
-from braintree.util.crypto import Crypto
-from braintree.util.xml_util import XmlUtil
-from braintree.webhook_notification import WebhookNotification
+from app.library.braintree_python.braintree.exceptions.invalid_signature_error import InvalidSignatureError
+from app.library.braintree_python.braintree.exceptions.invalid_challenge_error import InvalidChallengeError
+from app.library.braintree_python.braintree.util.crypto import Crypto
+from app.library.braintree_python.braintree.util.xml_util import XmlUtil
+from app.library.braintree_python.braintree.webhook_notification import WebhookNotification
 
 text_type = str
 

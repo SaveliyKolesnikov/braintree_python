@@ -1,5 +1,5 @@
-from braintree.attribute_getter import AttributeGetter
-from braintree.montary_amount import MontaryAmount
+from app.library.braintree_python.braintree.attribute_getter import AttributeGetter
+from app.library.braintree_python.braintree.montary_amount import MontaryAmount
 
 class ExchangeRateQuote(AttributeGetter):
     def __init__(self,attributes):

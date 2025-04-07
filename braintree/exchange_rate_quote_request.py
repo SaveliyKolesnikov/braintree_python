@@ -1,4 +1,4 @@
-from braintree.exchange_rate_quote_input import ExchangeRateQuoteInput
+from app.library.braintree_python.braintree.exchange_rate_quote_input import ExchangeRateQuoteInput
 
 class ExchangeRateQuoteRequest(object):
     def __init__(self):
