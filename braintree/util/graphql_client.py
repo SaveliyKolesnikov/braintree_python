@@ -1,14 +1,14 @@
 import json
 
-from braintree.exceptions.authentication_error import AuthenticationError
-from braintree.exceptions.authorization_error import AuthorizationError
-from braintree.exceptions.service_unavailable_error import ServiceUnavailableError
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.exceptions.server_error import ServerError
-from braintree.exceptions.too_many_requests_error import TooManyRequestsError
-from braintree.exceptions.unexpected_error import UnexpectedError
-from braintree.exceptions.upgrade_required_error import UpgradeRequiredError
-from braintree.util.http import Http
+from ..exceptions.authentication_error import AuthenticationError
+from ..exceptions.authorization_error import AuthorizationError
+from ..exceptions.service_unavailable_error import ServiceUnavailableError
+from ..exceptions.not_found_error import NotFoundError
+from ..exceptions.server_error import ServerError
+from ..exceptions.too_many_requests_error import TooManyRequestsError
+from ..exceptions.unexpected_error import UnexpectedError
+from ..exceptions.upgrade_required_error import UpgradeRequiredError
+from ..util.http import Http
 
 
 class GraphQLClient(Http):

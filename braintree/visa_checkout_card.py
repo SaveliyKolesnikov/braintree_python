@@ -1,7 +1,7 @@
-import braintree
-from braintree.address import Address
-from braintree.resource import Resource
-from braintree.credit_card_verification import CreditCardVerification
+from .address import Address
+from .resource import Resource
+from .credit_card_verification import CreditCardVerification
+from .subscription import Subscription
 
 class VisaCheckoutCard(Resource):
     """
@@ -16,7 +16,7 @@ class VisaCheckoutCard(Resource):
             self.billing_address = None
 
         if "subscriptions" in attributes:
-            self.subscriptions = [braintree.subscription.Subscription(gateway, subscription) for subscription in self.subscriptions]
+            self.subscriptions = [Subscription(gateway, subscription) for subscription in self.subscriptions]
 
         if "verifications" in attributes:
             sorted_verifications = sorted(attributes["verifications"], key=lambda verification: verification["created_at"], reverse=True)

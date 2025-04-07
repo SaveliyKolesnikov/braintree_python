@@ -1,18 +1,18 @@
 from decimal import Decimal
-from braintree.util.http import Http
+from .util.http import Http
 import braintree
 import warnings
-from braintree.add_on import AddOn
-from braintree.descriptor import Descriptor
-from braintree.discount import Discount
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource_collection import ResourceCollection
-from braintree.subscription_status_event import SubscriptionStatusEvent
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
-from braintree.transaction import Transaction
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from .add_on import AddOn
+from .descriptor import Descriptor
+from .discount import Discount
+from .exceptions.not_found_error import NotFoundError
+from .resource_collection import ResourceCollection
+from .subscription_status_event import SubscriptionStatusEvent
+from .successful_result import SuccessfulResult
+from .error_result import ErrorResult
+from .transaction import Transaction
+from .resource import Resource
+from .configuration import Configuration
 
 
 class Subscription(Resource):

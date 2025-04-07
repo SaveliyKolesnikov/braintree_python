@@ -1,5 +1,5 @@
-from braintree.util.parser import Parser
-from braintree.util.generator import Generator
+from ..util.parser import Parser
+from ..util.generator import Generator
 
 class XmlUtil(object):
     @staticmethod

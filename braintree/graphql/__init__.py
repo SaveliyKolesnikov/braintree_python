@@ -1,19 +1,19 @@
-from braintree.graphql.enums import (
+from ..graphql.enums import (
     RecommendedPaymentOption,
     Recommendations
 )
-from braintree.graphql.inputs import (
+from ..graphql.inputs import (
     PhoneInput,
     CustomerSessionInput,
     CreateCustomerSessionInput,
     UpdateCustomerSessionInput,
     CustomerRecommendationsInput,
 )
-from braintree.graphql.types import (
+from ..graphql.types import (
     CustomerRecommendationsPayload,
     PaymentOptions
 )
-from braintree.graphql.unions import (
+from ..graphql.unions import (
     CustomerRecommendations
 )
 

@@ -1,6 +1,6 @@
 import braintree
-from braintree.util.datetime_parser import parse_datetime
-from braintree.resource import Resource
+from .util.datetime_parser import parse_datetime
+from .resource import Resource
 
 class AchMandate(Resource):
 

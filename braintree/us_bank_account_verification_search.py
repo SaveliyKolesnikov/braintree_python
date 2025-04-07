@@ -1,7 +1,7 @@
-from braintree.us_bank_account import UsBankAccount
-from braintree.us_bank_account_verification import UsBankAccountVerification
-from braintree.search import Search
-from braintree.util import Constants
+from .us_bank_account import UsBankAccount
+from .us_bank_account_verification import UsBankAccountVerification
+from .search import Search
+from .util import Constants
 
 class UsBankAccountVerificationSearch:
     # Text fields

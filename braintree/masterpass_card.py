@@ -1,7 +1,7 @@
-import braintree
-from braintree.address import Address
-from braintree.resource import Resource
+from .address import Address
+from .resource import Resource
 from warnings import warn
+from .subscription import Subscription
 
 class MasterpassCard(Resource):
     """
@@ -17,7 +17,7 @@ class MasterpassCard(Resource):
             self.billing_address = None
 
         if "subscriptions" in attributes:
-            self.subscriptions = [braintree.subscription.Subscription(gateway, subscription) for subscription in self.subscriptions]
+            self.subscriptions = [Subscription(gateway, subscription) for subscription in self.subscriptions]
 
     @property
     def expiration_date(self):

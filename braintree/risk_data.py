@@ -1,5 +1,5 @@
-from braintree.attribute_getter import AttributeGetter
-from braintree.liability_shift import LiabilityShift
+from .attribute_getter import AttributeGetter
+from .liability_shift import LiabilityShift
 
 class RiskData(AttributeGetter):
     def __init__(self, attributes):

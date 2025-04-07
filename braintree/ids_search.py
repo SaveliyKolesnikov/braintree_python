@@ -1,4 +1,4 @@
-from braintree.search import Search
+from .search import Search
 
 class IdsSearch:
     ids = Search.MultipleValueNodeBuilder("ids")

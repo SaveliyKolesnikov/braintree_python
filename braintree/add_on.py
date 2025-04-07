@@ -1,5 +1,5 @@
-from braintree.configuration import Configuration
-from braintree.modification import Modification
+from .configuration import Configuration
+from .modification import Modification
 
 class AddOn(Modification):
     @staticmethod

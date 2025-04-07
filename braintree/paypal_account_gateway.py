@@ -1,9 +1,9 @@
 import braintree
-from braintree.paypal_account import PayPalAccount
-from braintree.error_result import ErrorResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource import Resource
-from braintree.successful_result import SuccessfulResult
+from .paypal_account import PayPalAccount
+from .error_result import ErrorResult
+from .exceptions.not_found_error import NotFoundError
+from .resource import Resource
+from .successful_result import SuccessfulResult
 
 
 class PayPalAccountGateway(object):

@@ -1,9 +1,9 @@
 import braintree
 import warnings
 
-from braintree.attribute_getter import AttributeGetter
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from .attribute_getter import AttributeGetter
+from .resource import Resource
+from .configuration import Configuration
 
 class TransactionLineItem(AttributeGetter):
     pass

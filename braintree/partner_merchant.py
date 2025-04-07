@@ -1,5 +1,5 @@
-from braintree.configuration import Configuration
-from braintree.resource import Resource
+from .configuration import Configuration
+from .resource import Resource
 
 class PartnerMerchant(Resource):
 

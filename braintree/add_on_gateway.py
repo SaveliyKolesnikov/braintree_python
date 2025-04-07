@@ -1,6 +1,6 @@
 import braintree
-from braintree.add_on import AddOn
-from braintree.resource_collection import ResourceCollection
+from .add_on import AddOn
+from .resource_collection import ResourceCollection
 
 class AddOnGateway(object):
     def __init__(self, gateway):

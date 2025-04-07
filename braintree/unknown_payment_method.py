@@ -1,5 +1,5 @@
 import braintree
-from braintree.resource import Resource
+from .resource import Resource
 
 class UnknownPaymentMethod(Resource):
     def image_url(self):

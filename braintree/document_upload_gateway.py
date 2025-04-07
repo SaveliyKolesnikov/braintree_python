@@ -1,9 +1,9 @@
 import braintree
 import mimetypes
-from braintree.document_upload import DocumentUpload
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.successful_result import SuccessfulResult
+from .document_upload import DocumentUpload
+from .error_result import ErrorResult
+from .resource import Resource
+from .successful_result import SuccessfulResult
 
 
 class DocumentUploadGateway(object):

@@ -1,9 +1,9 @@
 import braintree
-from braintree.sepa_direct_debit_account import SepaDirectDebitAccount
-from braintree.error_result import ErrorResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource import Resource
-from braintree.successful_result import SuccessfulResult
+from .sepa_direct_debit_account import SepaDirectDebitAccount
+from .error_result import ErrorResult
+from .exceptions.not_found_error import NotFoundError
+from .resource import Resource
+from .successful_result import SuccessfulResult
 
 
 class SepaDirectDebitAccountGateway(object):

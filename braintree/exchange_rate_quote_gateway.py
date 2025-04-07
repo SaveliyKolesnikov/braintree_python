@@ -1,6 +1,6 @@
-from braintree.exchange_rate_quote_payload import ExchangeRateQuotePayload
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
+from .exchange_rate_quote_payload import ExchangeRateQuotePayload
+from .error_result import ErrorResult
+from .successful_result import SuccessfulResult
 
 class ExchangeRateQuoteGateway(object):
     def __init__(self, gateway, graphql_client = None):

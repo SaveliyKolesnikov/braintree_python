@@ -1,4 +1,4 @@
-from braintree.search import Search
+from .search import Search
 
 class DisputeSearch:
     amount_disputed             =   Search.RangeNodeBuilder("amount_disputed")

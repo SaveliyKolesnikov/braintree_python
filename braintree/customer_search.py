@@ -1,4 +1,4 @@
-from braintree.search import Search
+from .search import Search
 
 class CustomerSearch:
       address_extended_address             = Search.TextNodeBuilder("address_extended_address")

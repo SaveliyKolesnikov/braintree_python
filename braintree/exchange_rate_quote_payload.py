@@ -1,5 +1,5 @@
-from braintree.exchange_rate_quote import ExchangeRateQuote
-from braintree.montary_amount import MontaryAmount
+from .exchange_rate_quote import ExchangeRateQuote
+from .montary_amount import MontaryAmount
 
 class ExchangeRateQuotePayload(object):
     def __init__(self, data):

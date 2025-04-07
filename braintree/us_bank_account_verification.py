@@ -1,6 +1,6 @@
-from braintree.attribute_getter import AttributeGetter
-from braintree.configuration import Configuration
-import braintree.us_bank_account
+from .attribute_getter import AttributeGetter
+from .configuration import Configuration
+from .us_bank_account import UsBankAccount
 
 class UsBankAccountVerification(AttributeGetter):
 
@@ -53,7 +53,7 @@ class UsBankAccountVerification(AttributeGetter):
         AttributeGetter.__init__(self, attributes)
 
         if attributes.get("us_bank_account") is not None:
-            self.us_bank_account = braintree.us_bank_account.UsBankAccount(gateway, self.us_bank_account)
+            self.us_bank_account = UsBankAccount(gateway, self.us_bank_account)
         else:
             self.us_bank_account = None
 

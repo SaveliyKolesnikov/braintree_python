@@ -1,6 +1,6 @@
 import braintree
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from .resource import Resource
+from .configuration import Configuration
 
 class PayPalPaymentResource(Resource):
     @staticmethod

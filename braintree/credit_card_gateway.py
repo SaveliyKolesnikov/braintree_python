@@ -1,12 +1,12 @@
 import braintree
 import warnings
-from braintree.credit_card import CreditCard
-from braintree.error_result import ErrorResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.ids_search import IdsSearch
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
+from .credit_card import CreditCard
+from .error_result import ErrorResult
+from .exceptions.not_found_error import NotFoundError
+from .ids_search import IdsSearch
+from .resource import Resource
+from .resource_collection import ResourceCollection
+from .successful_result import SuccessfulResult
 
 
 class CreditCardGateway(object):

@@ -1,6 +1,6 @@
 import braintree
-from braintree.us_bank_account import UsBankAccount
-from braintree.exceptions.not_found_error import NotFoundError
+from .us_bank_account import UsBankAccount
+from .exceptions.not_found_error import NotFoundError
 
 class UsBankAccountGateway(object):
     def __init__(self, gateway):

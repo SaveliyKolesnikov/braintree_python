@@ -1,11 +1,11 @@
 import braintree
-from braintree.payment_method_nonce import PaymentMethodNonce
+from .payment_method_nonce import PaymentMethodNonce
 
-from braintree.error_result import ErrorResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
+from .error_result import ErrorResult
+from .exceptions.not_found_error import NotFoundError
+from .resource import Resource
+from .resource_collection import ResourceCollection
+from .successful_result import SuccessfulResult
 
 class PaymentMethodNonceGateway(object):
     def __init__(self, gateway):

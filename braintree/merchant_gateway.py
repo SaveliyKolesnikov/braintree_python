@@ -1,10 +1,10 @@
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.merchant import Merchant
-from braintree.oauth_credentials import OAuthCredentials
+from .error_result import ErrorResult
+from .resource import Resource
+from .resource_collection import ResourceCollection
+from .successful_result import SuccessfulResult
+from .exceptions.not_found_error import NotFoundError
+from .merchant import Merchant
+from .oauth_credentials import OAuthCredentials
 
 
 class MerchantGateway(object):

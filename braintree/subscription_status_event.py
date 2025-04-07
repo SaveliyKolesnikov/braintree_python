@@ -1,5 +1,5 @@
 from decimal import Decimal
-from braintree.resource import Resource
+from .resource import Resource
 
 class SubscriptionStatusEvent(Resource):
     def __init__(self, gateway, attributes):

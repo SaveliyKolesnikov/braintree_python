@@ -1,26 +1,26 @@
 import warnings
-from braintree.util.http import Http
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.apple_pay_card import ApplePayCard
-from braintree.android_pay_card import AndroidPayCard
-from braintree.amex_express_checkout_card import AmexExpressCheckoutCard
-from braintree.credit_card import CreditCard
-from braintree.paypal_account import PayPalAccount
-from braintree.sepa_direct_debit_account import SepaDirectDebitAccount
-from braintree.europe_bank_account import EuropeBankAccount
-from braintree.us_bank_account import UsBankAccount
-from braintree.venmo_account import VenmoAccount
-from braintree.visa_checkout_card import VisaCheckoutCard
-from braintree.masterpass_card import MasterpassCard
-from braintree.address import Address
-from braintree.configuration import Configuration
-from braintree.ids_search import IdsSearch
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource_collection import ResourceCollection
+from .util.http import Http
+from .successful_result import SuccessfulResult
+from .error_result import ErrorResult
+from .resource import Resource
+from .apple_pay_card import ApplePayCard
+from .android_pay_card import AndroidPayCard
+from .amex_express_checkout_card import AmexExpressCheckoutCard
+from .credit_card import CreditCard
+from .paypal_account import PayPalAccount
+from .sepa_direct_debit_account import SepaDirectDebitAccount
+from .europe_bank_account import EuropeBankAccount
+from .us_bank_account import UsBankAccount
+from .venmo_account import VenmoAccount
+from .visa_checkout_card import VisaCheckoutCard
+from .masterpass_card import MasterpassCard
+from .address import Address
+from .configuration import Configuration
+from .ids_search import IdsSearch
+from .exceptions.not_found_error import NotFoundError
+from .resource_collection import ResourceCollection
 # NEXT_MAJOR_VERSION remove SamsungPayCard
-from braintree.samsung_pay_card import SamsungPayCard
+from .samsung_pay_card import SamsungPayCard
 
 
 class Customer(Resource):

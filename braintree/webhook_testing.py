@@ -1,5 +1,5 @@
 import braintree
-from braintree.configuration import Configuration
+from .configuration import Configuration
 
 class WebhookTesting(object):
     @staticmethod

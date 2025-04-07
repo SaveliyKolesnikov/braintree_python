@@ -1,12 +1,12 @@
-import braintree
 import warnings
-from braintree.customer import Customer
-from braintree.error_result import ErrorResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.ids_search import IdsSearch
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
+from .customer import Customer
+from .error_result import ErrorResult
+from .exceptions.not_found_error import NotFoundError
+from .ids_search import IdsSearch
+from .resource import Resource
+from .resource_collection import ResourceCollection
+from .successful_result import SuccessfulResult
+from .customer_search import CustomerSearch
 
 
 class CustomerGateway(object):
@@ -72,7 +72,7 @@ class CustomerGateway(object):
 
     def __fetch(self, query, ids):
         criteria = self.__criteria(query)
-        criteria["ids"] = braintree.customer_search.CustomerSearch.ids.in_list(ids).to_param()
+        criteria["ids"] = CustomerSearch.ids.in_list(ids).to_param()
         response = self.config.http().post(self.config.base_merchant_path() + "/customers/advanced_search", {"search": criteria})
         return [Customer(self.gateway, item) for item in ResourceCollection._extract_as_array(response["customers"], "customer")]
 

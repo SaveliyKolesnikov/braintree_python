@@ -1,6 +1,6 @@
-import braintree
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from .resource import Resource
+from .configuration import Configuration
+from .subscription import Subscription
 
 
 class SepaDirectDebitAccount(Resource):
@@ -15,4 +15,4 @@ class SepaDirectDebitAccount(Resource):
     def __init__(self, gateway, attributes):
         Resource.__init__(self, gateway, attributes)
         if "subscriptions" in attributes:
-            self.subscriptions = [braintree.subscription.Subscription(gateway, subscription) for subscription in self.subscriptions]
+            self.subscriptions = [Subscription(gateway, subscription) for subscription in self.subscriptions]

@@ -3,24 +3,25 @@ import requests
 from base64 import encodebytes
 import json
 import braintree
-from braintree import version
-from braintree.environment import Environment
-from braintree.util.xml_util import XmlUtil
-from braintree.exceptions.authentication_error import AuthenticationError
-from braintree.exceptions.authorization_error import AuthorizationError
-from braintree.exceptions.gateway_timeout_error import GatewayTimeoutError
-from braintree.exceptions.http.connection_error import ConnectionError
-from braintree.exceptions.http.invalid_response_error import InvalidResponseError
-from braintree.exceptions.http.timeout_error import ConnectTimeoutError
-from braintree.exceptions.http.timeout_error import ReadTimeoutError
-from braintree.exceptions.http.timeout_error import TimeoutError
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.exceptions.request_timeout_error import RequestTimeoutError
-from braintree.exceptions.server_error import ServerError
-from braintree.exceptions.service_unavailable_error import ServiceUnavailableError
-from braintree.exceptions.too_many_requests_error import TooManyRequestsError
-from braintree.exceptions.unexpected_error import UnexpectedError
-from braintree.exceptions.upgrade_required_error import UpgradeRequiredError
+from .. import version
+from ..environment import Environment
+from ..util.xml_util import XmlUtil
+from ..exceptions.authentication_error import AuthenticationError
+from ..exceptions.authorization_error import AuthorizationError
+from ..exceptions.gateway_timeout_error import GatewayTimeoutError
+from ..exceptions.http.connection_error import ConnectionError
+from ..exceptions.http.invalid_response_error import InvalidResponseError
+from ..exceptions.http.timeout_error import ConnectTimeoutError
+from ..exceptions.http.timeout_error import ReadTimeoutError
+from ..exceptions.http.timeout_error import TimeoutError
+from ..exceptions.not_found_error import NotFoundError
+from ..exceptions.request_timeout_error import RequestTimeoutError
+from ..exceptions.server_error import ServerError
+from ..exceptions.service_unavailable_error import ServiceUnavailableError
+from ..exceptions.too_many_requests_error import TooManyRequestsError
+from ..exceptions.unexpected_error import UnexpectedError
+from ..exceptions.upgrade_required_error import UpgradeRequiredError
+from ..configuration import Configuration
 
 class Http(object):
     class ContentType(object):
@@ -168,7 +169,7 @@ class Http(object):
             "Authorization": self.__authorization_header(),
             "User-Agent": "Braintree Python " + version.Version,
             "Accept-Encoding": "gzip",
-            "X-ApiVersion": braintree.configuration.Configuration.api_version()
+            "X-ApiVersion": Configuration.api_version()
         }
 
         if content_type == Http.ContentType.Xml:

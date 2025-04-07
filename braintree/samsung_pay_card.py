@@ -1,6 +1,7 @@
-import braintree
-from braintree.address import Address
-from braintree.resource import Resource
+from .address import Address
+from .resource import Resource
+from .subscription import Subscription
+
 
 # NEXT_MAJOR_VERSION remove this class
 # SamsungPay is deprecated
@@ -14,7 +15,7 @@ class SamsungPayCard(Resource):
             self.billing_address = None
 
         if "subscriptions" in attributes:
-            self.subscriptions = [braintree.subscription.Subscription(gateway, subscription) for subscription in self.subscriptions]
+            self.subscriptions = [Subscription(gateway, subscription) for subscription in self.subscriptions]
 
     @property
     def expiration_date(self):

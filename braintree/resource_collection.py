@@ -1,5 +1,5 @@
 import braintree
-from braintree.exceptions.unexpected_error import UnexpectedError
+from .exceptions.unexpected_error import UnexpectedError
 
 class ResourceCollection(object):
     """

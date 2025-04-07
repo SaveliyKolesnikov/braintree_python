@@ -1,6 +1,6 @@
 import braintree
-from braintree.address import Address
-from braintree.resource import Resource
+from .address import Address
+from .resource import Resource
 
 class MetaCheckoutCard(Resource):
     def __init__(self, gateway, attributes):

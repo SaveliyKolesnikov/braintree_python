@@ -1,8 +1,8 @@
 import braintree
-from braintree.resource import Resource
-from braintree.configuration import Configuration
-from braintree.three_d_secure_info import ThreeDSecureInfo
-from braintree.bin_data import BinData
+from .resource import Resource
+from .configuration import Configuration
+from .three_d_secure_info import ThreeDSecureInfo
+from .bin_data import BinData
 
 class PaymentMethodNonce(Resource):
     @staticmethod

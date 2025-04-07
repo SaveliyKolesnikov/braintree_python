@@ -1,7 +1,7 @@
 import braintree
-from braintree.address import Address
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from .address import Address
+from .resource import Resource
+from .configuration import Configuration
 
 
 class PaymentMethod(Resource):

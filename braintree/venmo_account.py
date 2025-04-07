@@ -1,5 +1,5 @@
-import braintree
-from braintree.resource import Resource
+from .resource import Resource
+from .subscription import Subscription
 
 class VenmoAccount(Resource):
     """
@@ -9,4 +9,4 @@ class VenmoAccount(Resource):
         Resource.__init__(self, gateway, attributes)
 
         if "subscriptions" in attributes:
-            self.subscriptions = [braintree.subscription.Subscription(gateway, subscription) for subscription in self.subscriptions]
+            self.subscriptions = [Subscription(gateway, subscription) for subscription in self.subscriptions]

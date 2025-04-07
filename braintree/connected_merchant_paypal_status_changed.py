@@ -1,4 +1,4 @@
-from braintree.resource import Resource
+from .resource import Resource
 
 class ConnectedMerchantPayPalStatusChanged(Resource):
 

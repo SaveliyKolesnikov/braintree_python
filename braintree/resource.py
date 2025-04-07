@@ -1,7 +1,7 @@
 import re
 import string
 import sys
-from braintree.attribute_getter import AttributeGetter
+from .attribute_getter import AttributeGetter
 
 text_type = str
 raw_type = bytes

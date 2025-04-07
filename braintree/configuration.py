@@ -1,8 +1,9 @@
-import braintree
-from braintree.credentials_parser import CredentialsParser
-from braintree.environment import Environment
-from braintree.exceptions.configuration_error import ConfigurationError
-from braintree.util.graphql_client import GraphQLClient
+from .braintree_gateway import BraintreeGateway
+from .credentials_parser import CredentialsParser
+from .environment import Environment
+from .exceptions.configuration_error import ConfigurationError
+from .util.graphql_client import GraphQLClient
+from .util.http import Http
 
 
 class Configuration(object):
@@ -42,7 +43,7 @@ class Configuration(object):
 
     @staticmethod
     def gateway():
-        return braintree.braintree_gateway.BraintreeGateway(config=Configuration.instantiate())
+        return BraintreeGateway(config=Configuration.instantiate())
 
     @staticmethod
     def instantiate():
@@ -119,7 +120,7 @@ class Configuration(object):
         return self.environment.protocol + self.environment.graphql_server_and_port + "/graphql"
 
     def http(self):
-        return braintree.util.http.Http(self)
+        return Http(self)
 
     def graphql_client(self):
         return GraphQLClient(self)

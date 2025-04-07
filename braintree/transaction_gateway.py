@@ -1,12 +1,13 @@
 import braintree
 import warnings
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
-from braintree.transaction import Transaction
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.exceptions.request_timeout_error import RequestTimeoutError
+from .error_result import ErrorResult
+from .resource import Resource
+from .resource_collection import ResourceCollection
+from .successful_result import SuccessfulResult
+from .transaction import Transaction
+from .exceptions.not_found_error import NotFoundError
+from .exceptions.request_timeout_error import RequestTimeoutError
+from .transaction_search import TransactionSearch
 
 
 class TransactionGateway(object):
@@ -169,7 +170,7 @@ class TransactionGateway(object):
 
     def __fetch(self, query, ids):
         criteria = self.__criteria(query)
-        criteria["ids"] = braintree.transaction_search.TransactionSearch.ids.in_list(ids).to_param()
+        criteria["ids"] = TransactionSearch.ids.in_list(ids).to_param()
         response = self.config.http().post(self.config.base_merchant_path() + "/transactions/advanced_search", {"search": criteria})
         if "credit_card_transactions" in response:
             return [Transaction(self.gateway, item) for item in ResourceCollection._extract_as_array(response["credit_card_transactions"], "transaction")]

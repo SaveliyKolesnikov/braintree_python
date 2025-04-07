@@ -1,12 +1,12 @@
 import re
-import braintree
-from braintree.subscription import Subscription
-from braintree.error_result import ErrorResult
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource import Resource
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
-from braintree.transaction import Transaction
+from .subscription import Subscription
+from .error_result import ErrorResult
+from .exceptions.not_found_error import NotFoundError
+from .resource import Resource
+from .resource_collection import ResourceCollection
+from .successful_result import SuccessfulResult
+from .transaction import Transaction
+from .subscription_search import SubscriptionSearch
 
 
 class SubscriptionGateway(object):
@@ -80,7 +80,7 @@ class SubscriptionGateway(object):
 
     def __fetch(self, query, ids):
         criteria = self.__criteria(query)
-        criteria["ids"] = braintree.subscription_search.SubscriptionSearch.ids.in_list(ids).to_param()
+        criteria["ids"] = SubscriptionSearch.ids.in_list(ids).to_param()
         response = self.config.http().post(self.config.base_merchant_path() + "/subscriptions/advanced_search", {"search": criteria})
         return [Subscription(self.gateway, item) for item in ResourceCollection._extract_as_array(response["subscriptions"], "subscription")]
 

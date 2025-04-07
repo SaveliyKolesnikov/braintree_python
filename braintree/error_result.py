@@ -1,6 +1,9 @@
-import braintree
-from braintree.errors import Errors
-from braintree.credit_card_verification import CreditCardVerification
+from .errors import Errors
+from .credit_card_verification import CreditCardVerification
+from .transaction import Transaction
+from .subscription import Subscription
+from .plan import Plan
+from .merchant_account import MerchantAccount
 
 class ErrorResult(object):
     """
@@ -31,22 +34,22 @@ class ErrorResult(object):
             self.credit_card_verification = None
 
         if "transaction" in attributes:
-            self.transaction = braintree.transaction.Transaction(gateway, attributes["transaction"])
+            self.transaction = Transaction(gateway, attributes["transaction"])
         else:
             self.transaction = None
 
         if "subscription" in attributes:
-            self.subscription = braintree.subscription.Subscription(gateway, attributes["subscription"])
+            self.subscription = Subscription(gateway, attributes["subscription"])
         else:
             self.subscription = None
 
         if "plan" in attributes:
-            self.plan = braintree.plan.Plan(gateway, attributes["plan"])
+            self.plan = Plan(gateway, attributes["plan"])
         else:
             self.plan = None
 
         if "merchant_account" in attributes:
-            self.merchant_account = braintree.merchant_account.MerchantAccount(gateway, attributes["merchant_account"])
+            self.merchant_account = MerchantAccount(gateway, attributes["merchant_account"])
         else:
             self.merchant_account = None
 

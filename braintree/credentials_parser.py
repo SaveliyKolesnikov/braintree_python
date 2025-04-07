@@ -1,8 +1,8 @@
 import os
 import sys
 import braintree
-from braintree.exceptions.configuration_error import ConfigurationError
-from braintree.environment import Environment
+from .exceptions.configuration_error import ConfigurationError
+from .environment import Environment
 
 class CredentialsParser(object):
     def __init__(self, client_id=None, client_secret=None, access_token=None):

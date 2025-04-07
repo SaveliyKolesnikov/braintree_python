@@ -1,8 +1,8 @@
 import braintree
-from braintree.resource import Resource
-from braintree.settlement_batch_summary import SettlementBatchSummary
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
+from .resource import Resource
+from .settlement_batch_summary import SettlementBatchSummary
+from .successful_result import SuccessfulResult
+from .error_result import ErrorResult
 
 class SettlementBatchSummaryGateway(object):
     def __init__(self, gateway):

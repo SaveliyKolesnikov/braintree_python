@@ -1,6 +1,6 @@
 from typing import List, Dict
-from braintree.graphql.inputs.customer_session_input import CustomerSessionInput
-from braintree.graphql.enums.recommendations import Recommendations
+from ...graphql.inputs.customer_session_input import CustomerSessionInput
+from ...graphql.enums.recommendations import Recommendations
 
 
 class CustomerRecommendationsInput:

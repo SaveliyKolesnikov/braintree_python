@@ -1,5 +1,5 @@
 from decimal import Decimal
-from braintree.attribute_getter import AttributeGetter
+from .attribute_getter import AttributeGetter
 
 class DisbursementDetail(AttributeGetter):
     def __init__(self, attributes):

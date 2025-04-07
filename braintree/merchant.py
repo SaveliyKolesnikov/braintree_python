@@ -1,5 +1,5 @@
-from braintree.resource import Resource
-from braintree.merchant_account import MerchantAccount
+from .resource import Resource
+from .merchant_account import MerchantAccount
 
 class Merchant(Resource):
     def __init__(self, gateway, attributes):

@@ -1,12 +1,12 @@
-from braintree.util.http import Http
+from .util.http import Http
 import braintree
 import warnings
-from braintree.exceptions.not_found_error import NotFoundError
-from braintree.resource_collection import ResourceCollection
-from braintree.successful_result import SuccessfulResult
-from braintree.error_result import ErrorResult
-from braintree.resource import Resource
-from braintree.configuration import Configuration
+from .exceptions.not_found_error import NotFoundError
+from .resource_collection import ResourceCollection
+from .successful_result import SuccessfulResult
+from .error_result import ErrorResult
+from .resource import Resource
+from .configuration import Configuration
 
 class SettlementBatchSummary(Resource):
     @staticmethod

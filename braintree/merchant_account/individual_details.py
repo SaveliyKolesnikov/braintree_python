@@ -1,5 +1,5 @@
-from braintree.attribute_getter import AttributeGetter
-from braintree.merchant_account.address_details import AddressDetails
+from ..attribute_getter import AttributeGetter
+from ..merchant_account.address_details import AddressDetails
 
 class IndividualDetails(AttributeGetter):
     detail_list = [

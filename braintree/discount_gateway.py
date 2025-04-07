@@ -1,6 +1,6 @@
 import braintree
-from braintree.discount import Discount
-from braintree.resource_collection import ResourceCollection
+from .discount import Discount
+from .resource_collection import ResourceCollection
 
 class DiscountGateway(object):
     def __init__(self, gateway):

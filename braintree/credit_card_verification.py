@@ -1,9 +1,9 @@
 from decimal import Decimal
-from braintree.attribute_getter import AttributeGetter
-from braintree.configuration import Configuration
-from braintree.risk_data import RiskData
-from braintree.three_d_secure_info import ThreeDSecureInfo
-from braintree.resource import Resource
+from .attribute_getter import AttributeGetter
+from .configuration import Configuration
+from .risk_data import RiskData
+from .three_d_secure_info import ThreeDSecureInfo
+from .resource import Resource
 
 class CreditCardVerification(AttributeGetter):
 

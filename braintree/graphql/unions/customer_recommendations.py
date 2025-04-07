@@ -1,5 +1,5 @@
 from typing import List
-from braintree.graphql.types.payment_options import PaymentOptions
+from ...graphql.types.payment_options import PaymentOptions
 
 
 class CustomerRecommendations:

@@ -1,5 +1,5 @@
-import braintree
-from braintree.resource import Resource
+from .subscription import Subscription
+from .resource import Resource
 from warnings import warn
 
 class AmexExpressCheckoutCard(Resource):
@@ -11,7 +11,7 @@ class AmexExpressCheckoutCard(Resource):
         Resource.__init__(self, gateway, attributes)
 
         if "subscriptions" in attributes:
-            self.subscriptions = [braintree.subscription.Subscription(gateway, subscription) for subscription in self.subscriptions]
+            self.subscriptions = [Subscription(gateway, subscription) for subscription in self.subscriptions]
 
     @property
     def expiration_date(self):

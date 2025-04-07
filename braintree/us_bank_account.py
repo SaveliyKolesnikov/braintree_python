@@ -1,8 +1,8 @@
 import braintree
-from braintree.resource import Resource
-from braintree.configuration import Configuration
-from braintree.ach_mandate import AchMandate
-from braintree.us_bank_account_verification import UsBankAccountVerification
+from .resource import Resource
+from .configuration import Configuration
+from .ach_mandate import AchMandate
+from .us_bank_account_verification import UsBankAccountVerification
 
 class UsBankAccount(Resource):
 

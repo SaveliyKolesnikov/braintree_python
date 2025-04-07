@@ -1,9 +1,9 @@
-import braintree
 import warnings
-from braintree.resource import Resource
-from braintree.address import Address
-from braintree.configuration import Configuration
-from braintree.credit_card_verification import CreditCardVerification
+from .resource import Resource
+from .address import Address
+from .configuration import Configuration
+from .credit_card_verification import CreditCardVerification
+from .subscription import Subscription
 from enum import Enum
 
 class CreditCard(Resource):
@@ -305,7 +305,7 @@ class CreditCard(Resource):
             self.billing_address = None
 
         if "subscriptions" in attributes:
-            self.subscriptions = [braintree.subscription.Subscription(gateway, subscription) for subscription in self.subscriptions]
+            self.subscriptions = [Subscription(gateway, subscription) for subscription in self.subscriptions]
 
         if "verifications" in attributes:
             sorted_verifications = sorted(attributes["verifications"], key=lambda verification: verification["created_at"], reverse=True)

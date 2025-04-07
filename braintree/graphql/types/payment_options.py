@@ -1,4 +1,4 @@
-from braintree.graphql.enums import RecommendedPaymentOption
+from ...graphql.enums import RecommendedPaymentOption
 
 
 class PaymentOptions:

@@ -1,4 +1,4 @@
-from braintree.exceptions.braintree_error import BraintreeError
+from ..exceptions.braintree_error import BraintreeError
 
 class AuthenticationError(BraintreeError):
     """

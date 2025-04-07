@@ -1,5 +1,5 @@
-import braintree
-from braintree.resource import Resource
+from .subscription import Subscription
+from .resource import Resource
 
 # NEXT_MAJOR_VERSION - rename to GooglePayCard
 class AndroidPayCard(Resource):
@@ -12,7 +12,7 @@ class AndroidPayCard(Resource):
             self.is_expired = self.expired
 
         if "subscriptions" in attributes:
-            self.subscriptions = [braintree.subscription.Subscription(gateway, subscription) for subscription in self.subscriptions]
+            self.subscriptions = [Subscription(gateway, subscription) for subscription in self.subscriptions]
 
     @property
     def expiration_date(self):

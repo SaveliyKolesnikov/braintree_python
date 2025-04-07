@@ -1,7 +1,7 @@
 from decimal import Decimal
-from braintree.resource import Resource
-from braintree.transaction_search import TransactionSearch
-from braintree.merchant_account import MerchantAccount
+from .resource import Resource
+from .transaction_search import TransactionSearch
+from .merchant_account import MerchantAccount
 
 class Disbursement(Resource):
     class Type(object):

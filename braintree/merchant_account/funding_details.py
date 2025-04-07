@@ -1,4 +1,4 @@
-from braintree.attribute_getter import AttributeGetter
+from ..attribute_getter import AttributeGetter
 
 class FundingDetails(AttributeGetter):
     detail_list = [

@@ -1,5 +1,5 @@
-from braintree.payment_method_parser import parse_payment_method
-from braintree.resource import Resource
+from .payment_method_parser import parse_payment_method
+from .resource import Resource
 
 class RevokedPaymentMethodMetadata(Resource):
 

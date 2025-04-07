@@ -1,8 +1,8 @@
-import braintree
-from braintree.error_result import ErrorResult
-from braintree.successful_result import SuccessfulResult
-from braintree.transaction import Transaction
-from braintree.exceptions.test_operation_performed_in_production_error import TestOperationPerformedInProductionError
+from .error_result import ErrorResult
+from .successful_result import SuccessfulResult
+from .transaction import Transaction
+from .exceptions.test_operation_performed_in_production_error import TestOperationPerformedInProductionError
+from .environment import Environment
 
 class TestingGateway(object):
     def __init__(self, gateway):
@@ -47,6 +47,6 @@ class TestingGateway(object):
             return ErrorResult(self.gateway, response["api_error_response"])
 
     def __check_environment(self):
-        if self.config.environment == braintree.Environment.Production:
+        if self.config.environment == Environment.parse_environment["production"]:
             raise TestOperationPerformedInProductionError()
 

@@ -1,19 +1,19 @@
 import braintree
-from braintree.apple_pay_card import ApplePayCard
-from braintree.credit_card import CreditCard
-from braintree.payment_method import PaymentMethod
-from braintree.paypal_account import PayPalAccount
-from braintree.europe_bank_account import EuropeBankAccount
-from braintree.android_pay_card import AndroidPayCard
-from braintree.amex_express_checkout_card import AmexExpressCheckoutCard
-from braintree.venmo_account import VenmoAccount
-from braintree.us_bank_account import UsBankAccount
-from braintree.visa_checkout_card import VisaCheckoutCard
-from braintree.masterpass_card import MasterpassCard
-from braintree.sepa_direct_debit_account import SepaDirectDebitAccount
+from .apple_pay_card import ApplePayCard
+from .credit_card import CreditCard
+from .payment_method import PaymentMethod
+from .paypal_account import PayPalAccount
+from .europe_bank_account import EuropeBankAccount
+from .android_pay_card import AndroidPayCard
+from .amex_express_checkout_card import AmexExpressCheckoutCard
+from .venmo_account import VenmoAccount
+from .us_bank_account import UsBankAccount
+from .visa_checkout_card import VisaCheckoutCard
+from .masterpass_card import MasterpassCard
+from .sepa_direct_debit_account import SepaDirectDebitAccount
 # NEXT_MAJOR_VERSION remove SamsungPayCard
-from braintree.samsung_pay_card import SamsungPayCard
-from braintree.unknown_payment_method import UnknownPaymentMethod
+from .samsung_pay_card import SamsungPayCard
+from .unknown_payment_method import UnknownPaymentMethod
 
 def parse_payment_method(gateway, attributes):
     if "paypal_account" in attributes:
